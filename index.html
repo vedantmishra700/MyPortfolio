@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio || Vedant</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d41c29aab3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo"/>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p> UI/UX Designer</p>
+                <h1> Hi, I'm <b><span> Vedant Mishra</span></b> </h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="User">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="ab1"> I am a final-year engineering student at IET Lucknow, pursuing a B.Tech degree with an average CGPA of 9. Passionate about website and software development, I enjoy turning ideas into digital solutions that are both functional and visually appealing. My journey as a developer has equipped me with a solid foundation in programming, problem-solving, and creating efficient, user-friendly applications.</p>
+                    <br/>
+                    <p class="ab2">  I am always eager to learn new technologies, improve my skills, and take on challenging projects that push my abilities. Whether it's front-end or back-end development, I thrive in environments that value creativity and collaboration.</p>
+                    <br/><br/>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills </p>
+                        <p class="tab-links" onclick="opentab('achievements')" >Achievements </p>
+                        <p class="tab-links" onclick="opentab('education')"> Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span> UI/UX</span><br/> Designing Web/App Interfaces </li>
+                            <li><span> Web Development</span><br/> Web app Development </li>
+                            <li><span> App Development</span><br/> Building Android/ioS apps </li>
+                            <li><span> Programming Languages</span><br/> C++, Python , Java  </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span> Summer Trainee at SoftPro </span><br/> Received a training in MERN stack from industry experts at Softpro </li>
+                            <li><span> App Development Intern at CodSoft</span><br/> During this internship I developed an from scratch using MERN Stack </li>
+                            <li><span> Machine Learning Certification from IBM</span><br/> I have completed a corse in Machine Learning from mentor at IBM </li>
+                            <li><span> CodeChef Rank</span><br/> Secured <b>Global Rank 53</b> in The CodeChef November Long 2022 among 13000 participants  </li>
+                            <li><span> LeetCode</span><br/> Solved 200+ DSA questions on LeetCode </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span> B.Tech CS(AI)</span><br/> Completed B.Tech from IET Lucknow in year 2025 with 9 CGPA  </li>
+                            <li><span> Intermediate</span><br/> Secured 94% in Class 12th from GN National Public School Gorakhpur (2021) </li>
+                            <li><span> High School</span><br/> Secured 93% in Class 10th from St.Thomas School Khalilabad (2019) </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       <!-- Services-->
+        <div id="services">
+            <div class="container-new">
+                <h1 class="sub-title">My Services</h1>
+               <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design involves creating the visual layout and user experience of a website. It focuses on aesthetics, usability, and functionality to ensure that users find the site both visually appealing and easy to navigate. Good web design incorporates key principles like consistency, responsiveness, and simplicity.</p>
+                    <a href="#"> Learn More >></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI/UX design focuses on creating a seamless and engaging experience for users when interacting with digital products, such as websites and apps. UI (User Interface) and UX (User Experience) are two distinct but interconnected disciplines:User Interface (UI) Design & User Experience (UX) Design</p>
+                    <a href="#"> Learn More >></a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>App design involves creating the look, feel, and functionality of mobile applications. It encompasses both User Interface (UI) and User Experience (UX) design to deliver a seamless and visually engaging app that meets users' needs. App design aims to provide an intuitive and enjoyable experience while helping users accomplish tasks efficiently.</p>
+                    <a href="#"> Learn More >></a>
+                </div>
+               </div>
+                   
+            </div>
+        </div>
+
+
+        <!-- Portfolio -->
+         <div id="portfolio">
+            <div class="container-new">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="No">
+                        <div class="layer">
+                            <h3>Query Management System</h3>
+                            <p>In this project we have integrated Query Management System
+                                in the website of karam industries where they can get the queries from the users and then resolve them for the convenience of users.
+                                This whole Project is based on MERN stack</p>
+                                <a href="https://github.com/vedantmishra700/QueryManagementSystem"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="No">
+                        <div class="layer">
+                            <h3>Weather App</h3>
+                            <p>A simple weather app built with HTML, CSS and JavaScript that fetches real-time weather data using a predefined API.
+                                It displays current weather conditions, including temperature, humidity and wind speed, for any searched location
+</p>
+                                <a href="https://github.com/vedantmishra700/WeatherApp"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="No">
+                        <div class="layer">
+                            <h3>Algorithm Visualizer</h3>
+                            <p> A User interface app that helps people understand the flow of various algorithms studied Computer science field that helps them better understand the algorithm and have a strong hold over its concept visualization</p>
+                                <a href="https://github.com/vedantmishra700/Algorithm_Visualizer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+         </div>
+
+        <!-- Contact-->
+         <div id="contact">
+            <div class="container-new">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title"> Contact Me</h1>
+                        <p><i class="fa-regular fa-envelope"></i> vedantmishra5802@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 7007191612</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/vedant.mishra.5667"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/the_mishra_ji_7/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/vedant-mishra-3a641b232/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/vedantmishra700"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="images/Vedant_Resume.pdf" download class="btn btn-2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                             <input type="text" name="name" placeholder="Your Name" required/>
+                             <input type="email" name="email" placeholder="Your Email" required />
+                             <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                             <button type="submit" class="btn btn-3" >Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright &copy; Vedant<br/> <br/>Made with ❤️💖💗💓💝 by <span style="color: #ff004f;"><b>Vedant Mishra</b></span> </p>
+            </div>
+         </div> 
+    <script>
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function closemenu()
+        {
+            sidemenu.style.right="-200px";
+        }
+
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzOnYKdjaE-AI-W95WzmBj3DR0wvX9PdBRFl_kIhc5G3s24sZVTleNv2Mh0mvDcqN2whA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => { msg.innerHTML = "Message Sent Successfully"
+                setTimeout( function(){
+                    msg.innerHTML =""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
+</body>
+</html>
